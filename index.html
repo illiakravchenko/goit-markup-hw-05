@@ -487,7 +487,7 @@
             <label class="subscribe-form-field" for="subscribe">
               <input
                 class="subscribe-form-input"
-                id="subscribe"
+                name="subscribe"
                 type="email"
                 placeholder="E-mail"/>
             </label>
@@ -515,26 +515,26 @@
           Leave your contacts and we will call you back
         </p>
         <form class="modal-form form" name="modal">
-          <div class="modal-form form">
-            <div class="form-wrapper">
-              <label class="form-label" for="user_name">Name</label>
+          <div class="form-wrapper">
+              <label class="form-label" for="user-name">Name</label>
                 <div class="form-field">
               <input
                 class="form-input"
                 type="text"
-                id="user_name"
-                name="user_name"/>
-              <svg class="form-icon" width="18" height="18">
+                id="user-name"
+                name="user-name"/>
+              <svg class="form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
-            </div>
-          </div>
-      </div>
+          </div>  
+      </div>      
+          
+      
       <div class="form-wrapper">
             <label class="form-label" for="phone">Phone</label>
               <div class="form-field">
                 <input class="form-input" type="tel" id="phone" name="phone"/>
-                <svg class="form-icon" width="18" height="18">
+                <svg class="form-icon" width="18" height="24">
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
               </div>
@@ -544,27 +544,29 @@
             <label class="form-label" for="email">Email</label>
             <div class="form-field">
               <input class="form-input" type="email" id="email" name="email"/>
-              <svg class="form-icon" width="18" height="18">
+              <svg class="form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
 
           <div class="form-wrapper">
-            <label for="comment" class="form-label">Comment</label>
-            <textarea class="form-message" name="comment" id="comment"  rows="5"  placeholder="Text input"></textarea>
+            <label for="user-comment" class="form-label">Comment</label>
+            <textarea class="form-message" name="user-comment" id="comment"  rows="5"  placeholder="Text input"></textarea>
           </div>
 
-          <label class="form-agreement">
-            <input class="checkbox visually-hidden" type="checkbox" name="usr_agreement" value="false"/>
-            <span class="form-agreement-checkbox">
-              <svg class="form-agreement-icon" width="10" height="8">
-                <use href="./images/icons.svg#icon-check"></use>
-              </svg>
-            </span>
-            I accept the terms and conditions of the 
-            <a class="form-agreement-link" href="">Privacy Policy</a>
-          </label>
+          <div class="form-wrapper-checkbox">
+            <label class="form-agreement" for="user-privacy">
+              <input class="form-checkbox visually-hidden" type="checkbox" name="user-privacy" id="user-privacy" value="true"/>
+            </label>
+            <label class="form-agreement-text" for="user-privacy">
+              <span class="checkbox">
+                <svg class="form-agreement-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>I accept the terms and conditions of the
+              <a class="form-agreement-link" href="">Privacy Policy</a></label>
+          </div>
             <button class="form-btn" type="submit">Send</button>
         </form>
       </div>
