@@ -488,6 +488,7 @@
               <input
                 class="subscribe-form-input"
                 name="subscribe"
+                id="subscribe"
                 type="email"
                 placeholder="E-mail"/>
             </label>
@@ -551,21 +552,19 @@
           </div>
 
           <div class="form-wrapper">
-            <label for="user-comment" class="form-label">Comment</label>
-            <textarea class="form-message" name="user-comment" id="comment"  rows="5"  placeholder="Text input"></textarea>
+            <label class="form-label" for="user-comment">Comment</label>
+            <textarea class="form-message" id="user-comment" name="user-comment"  rows="5"  placeholder="Text input"></textarea>
           </div>
 
-          <div class="form-wrapper-checkbox">
-            <label class="form-agreement" for="user-privacy">
-              <input class="form-checkbox visually-hidden" type="checkbox" name="user-privacy" id="user-privacy" value="true"/>
-            </label>
-            <label class="form-agreement-text" for="user-privacy">
-              <span class="checkbox">
-                <svg class="form-agreement-icon" width="10" height="8">
+          <div class="form-checkbox">
+            <input class="checkbox-line visually-hidden" id="user-privacy" type="checkbox" name="user-privacy" value="true" />
+            <label class="checkbox-label" for="user-privacy"> I accept the terms and conditions of the
+              <span class="checkbox-span">
+                <svg class="checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use>
-                </svg>
-              </span>I accept the terms and conditions of the
-              <a class="form-agreement-link" href="">Privacy Policy</a></label>
+                </svg> 
+                <a href="checkbox-link">Privat Policy</a></span>
+            </label>
           </div>
             <button class="form-btn" type="submit">Send</button>
         </form>
